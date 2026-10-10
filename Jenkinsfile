@@ -21,8 +21,8 @@ pipeline {
         stage('run python program') {
             steps {
                 sh """
-                    export username = $USERNAME
-                    export password = $PASSWORD
+                    export username=$USERNAME
+                    export password=$PASSWORD
                     $PYTHON_VERSION read.py
                 """
             }
